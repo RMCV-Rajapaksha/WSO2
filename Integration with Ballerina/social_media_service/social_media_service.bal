@@ -27,6 +27,9 @@ type ErrorDetails record {
     time:Utc timeStamp;
 };
 
+
+// UserNotFound is become subtype of http:NotFound it like super class and xub class in OOP
+// Using this kind od things we can add additional informations
 type UserNotFound record {
     *http:NotFound;
     ErrorDetails body;
